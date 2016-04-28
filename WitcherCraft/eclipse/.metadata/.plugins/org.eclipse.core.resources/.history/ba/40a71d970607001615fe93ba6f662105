@@ -1,7 +1,0 @@
-package com.bakster.witchercraft.items;
-
-import net.minecraft.item.Item;
-
-public class SchematWolfSilverSword extends Item {
-
-}

@@ -1,7 +1,0 @@
-package com.bakster.witchercraft.items.WolfSilverSword;
-
-import net.minecraft.item.Item;
-
-public class WolfSilverSword extends Item {
-
-}
