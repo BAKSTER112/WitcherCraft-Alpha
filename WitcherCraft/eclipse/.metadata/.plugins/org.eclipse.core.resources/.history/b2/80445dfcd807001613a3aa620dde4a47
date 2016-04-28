@@ -1,0 +1,131 @@
+package com.bakster.witchercraft;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
+
+import com.bakster.witchercraft.proxy.CommonProxy;
+import com.bakster.witchercraft.*;
+import com.bakster.witchercraft.combat.Crossbowwood;
+import com.bakster.witchercraft.combat.SchematWolfSilverSword;
+import com.bakster.witchercraft.combat.WolfSilverSword;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.common.util.EnumHelper;
+
+@Mod(modid = WitcherCraft.MODID, version = WitcherCraft.VERSION)
+
+public class WitcherCraft {
+
+
+    public static final String MODID = "WitcherCraft";
+    public static final String VERSION = "1.0";
+    
+    @SidedProxy(clientSide = "com.bakster.witchercraft.proxy.ClientProxy", serverSide = "com.bakster.witchercraft.proxy.CommonProxy")
+    public static CommonProxy proxy;
+    
+    @Instance(MODID)
+   	public static WitcherCraft instance;
+    
+   
+	
+	
+	
+	public static CreativeTabs tabWitcherItems = new CreativeTabs("tabWitcherItems") {
+		@Override
+		@SideOnly(Side.CLIENT)
+		public Item getTabIconItem() {
+			
+			
+			ItemStack iStack = new ItemStack(WitcherCraft.wolfSilverSword);
+	        return iStack.getItem();
+		}
+	};
+	
+	public static CreativeTabs tabWitcherSchematy = new CreativeTabs("tabWitcherSchematy") {
+		@Override
+		@SideOnly(Side.CLIENT)
+		public Item getTabIconItem() {
+			
+			
+			ItemStack iStack = new ItemStack(WitcherCraft.schematWolfSilverSword);
+	        return iStack.getItem();
+		}
+	};
+    
+    //material
+	public static ToolMaterial WITCHER_SILVER = EnumHelper.addToolMaterial("WITCHER_SILVER", 0, 4000, 1.0F, 10.0F, 0);
+	
+    //itemy
+	public static Item meteorSilver;
+	
+	
+	
+	//bron
+	public static Item crossbowWood;
+	public static Item wolfSilverSword;
+	
+	
+	//schemat
+	public static Item schematWolfSilverSword;
+	
+	
+    
+    @EventHandler
+	public void preInit(FMLPreInitializationEvent event){
+    	
+    	
+    	meteorSilver = new MeteorSilver();
+    	
+    	
+    	
+    	//bron
+    	wolfSilverSword = new WolfSilverSword();
+    	crossbowWood = new Crossbowwood();
+    	
+    	
+    	
+    	
+    	//schematy
+    	schematWolfSilverSword = new SchematWolfSilverSword();
+    	
+    	
+    	
+    	
+    	
+    	
+    	//bloki
+		
+		//naphthaGenerator = new NaphthaGenerator().setCreativeTab(BaksCraft.tabBaksMachines).setBlockName("naphthaGenerator");
+	}
+    
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+
+    	//bronie
+    	GameRegistry.registerItem(wolfSilverSword, "wolfSilverSword");
+    	GameRegistry.registerItem(crossbowWood, "Crossbowwood");
+    	
+    	//schematy
+    	GameRegistry.registerItem(schematWolfSilverSword, "schematWolfSilverSword");
+    	
+    	//GameRegistry.registerBlock(copperOre, "copperOre");
+    	
+    	
+    	
+    	
+    	
+		
+    }
+}

@@ -1,0 +1,17 @@
+package com.bakster.witchercraft.proxy.CommonProxy;
+
+public class CommonProxy {
+
+	public void registerRenderThings() {
+		
+	}
+	
+	public void registerTileEntitySpecialRenderer() {
+	
+	}
+	
+	public void registerTileEntities(){
+		
+		
+	}
+}

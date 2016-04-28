@@ -1,0 +1,21 @@
+//combat
+item.wolfsilversword.name=Silver Sword
+item.crossbowWood.name=Wooden Crossbow
+
+//zbroje 
+
+item.wolfArmorChest.name=Witcher Chestplate
+item.wolfArmorLeggings.name=Witcher Leggings
+item.wolfArmorBoots.name=Witcher Boots
+
+//items
+
+item.meteorSilver_ingot.name=Meteor Silver Ingot
+
+//patterns
+item.schematWolfSilverSword.name=Wolf Silver Sword Pattern
+
+//tabs
+itemGroup.tabWitcherItems=WitcherCraft Items
+itemGroup.tabWitcherSchematy=WitcherCraft Patterns
+itemGroup.tabWitcherCombat=WitcherCraft Combat

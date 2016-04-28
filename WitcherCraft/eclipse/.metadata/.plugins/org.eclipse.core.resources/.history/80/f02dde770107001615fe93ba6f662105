@@ -1,0 +1,22 @@
+package com.bakster.witchercraft;
+
+import net.minecraft.init.Blocks;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+
+@Mod(modid = WitcherCraft.MODID, version = WitcherCraft.VERSION)
+
+public class WitcherCraft {
+
+
+    public static final String MODID = "WitcherCraft";
+    public static final String VERSION = "1.0";
+    
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+		
+        
+    }
+}

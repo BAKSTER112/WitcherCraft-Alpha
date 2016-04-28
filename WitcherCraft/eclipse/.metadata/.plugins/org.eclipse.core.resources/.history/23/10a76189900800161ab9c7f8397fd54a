@@ -1,0 +1,27 @@
+package com.bakster.witchercraft.armor;
+
+import com.bakster.witchercraft.WitcherCraft;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+
+public class WolfArmorChest extends ItemArmor {
+
+		public String textureName;
+
+	public WolfArmorChest(String unlocalizedName, ArmorMaterial material, String textureName, int type) {
+	    super(material, 0, type);
+	    this.textureName = textureName;
+	    this.setUnlocalizedName(unlocalizedName);
+	    this.setTextureName(WitcherCraft.MODID + ":" + unlocalizedName);
+	}
+	
+	@Override
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
+	{
+	    return WitcherCraft.MODID + ":textures/armor/" + this.textureName + "_" + (this.armorType == 2 ? "2" : "1") + ".png";
+	}
+
+}

@@ -1,0 +1,15 @@
+//combat
+item.wolfsilversword.name=Silver Sword
+item.crossbowWood.name=Wooden Crossbow
+
+//items
+
+item.meteorSilver_ingot.name=Meteor Silver Ingot
+
+//patterns
+item.schematWolfSilverSword.name=Wolf Silver Sword Pattern
+
+//tabs
+itemGroup.tabWitcherItems=WitcherCraft Items
+itemGroup.tabWitcherSchematy=WitcherCraft Patterns
+

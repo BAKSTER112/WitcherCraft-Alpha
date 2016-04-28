@@ -1,0 +1,7 @@
+package com.bakster.witchercraft.combat;
+
+import net.minecraft.item.Item;
+
+public class WolfArmorLeggings extends Item {
+
+}

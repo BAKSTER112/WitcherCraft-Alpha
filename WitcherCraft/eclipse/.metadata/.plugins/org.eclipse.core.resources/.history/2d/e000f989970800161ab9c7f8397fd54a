@@ -1,0 +1,7 @@
+package com.bakster.witchercraft.armor;
+
+import net.minecraft.item.Item;
+
+public class WolfMedalliont extends Item {
+
+}

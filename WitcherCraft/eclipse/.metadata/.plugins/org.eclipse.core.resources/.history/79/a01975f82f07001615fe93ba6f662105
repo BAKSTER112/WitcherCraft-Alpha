@@ -1,0 +1,15 @@
+package com.bakster.witchercraft.items;
+
+import com.bakster.witchercraft.WitcherCraft;
+
+import net.minecraft.item.Item;
+
+public class SchematWolfSilverSword extends Item {
+	public SchematWolfSilverSword() {
+        maxStackSize = 64;
+        setCreativeTab(WitcherCraft.tabWitcherSchematy);
+        setTextureName(WitcherCraft.MODID + ":" + "schemat");
+        setUnlocalizedName("schematWolfSilverSword");
+	}
+}
+
