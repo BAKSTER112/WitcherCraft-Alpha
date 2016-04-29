@@ -85,7 +85,7 @@ public class WitcherCraft {
 	
     //itemy
 	public static Item meteorSilver_ingot;
-	
+	public static Item silver_ingot;
 	
 	
 	//bron
@@ -111,7 +111,7 @@ public class WitcherCraft {
     	
     	//itemy
     	meteorSilver_ingot = new MeteorSilverIngot();
-    	
+    	silver_ingot = new SilverIngot();
     	
     	
     	//bron
@@ -144,6 +144,7 @@ public class WitcherCraft {
     {
     	//itemy
     	GameRegistry.registerItem(meteorSilver_ingot, "meteorSilver_ingot");
+    	GameRegistry.registerItem(silver_ingot, "silver_ingot");
     	
     	//bronie
     	GameRegistry.registerItem(wolfSilverSword, "wolfSilverSword");
