@@ -14,7 +14,7 @@ item.meteorSilver_ingot.name=Meteor Silver Ingot
 item.silver_ingot.name=Silver Ingot
 
 //patterns
-item.schematWolfSilverSword.name=Wolf Silver Sword Pattern
+item.schematWolfSilverSword.name=Silver Sword Pattern
 
 //tabs
 itemGroup.tabWitcherItems=WitcherCraft Items

@@ -1,7 +1,0 @@
-package com.bakster.witchercraft.armor;
-
-import net.minecraft.item.Item;
-
-public class WolfArmorBoots extends Item {
-
-}
